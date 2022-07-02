@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+<meta charset="utf-8"/>
+<title>Digital Banking</title>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.mon.css"
+th:href="@{/css/bootstrap.mon.css}"/>
+<link rel="stylesheet" type="text/css" href="../static/css/MyStyle.css"
+th:href="@{/css/MyStyle.css}"/>
+</head>
+<body>
+<header>
+<div >
+<div >
+<ul >
+<li><a th:href="@{/index}">Operations</a></li>
+<li><a th:href="@{/client}">Clients</a></li>
+<li><a th:href="@{/compte}">Comptes</a></li>
+<ul class="navbar navbar-nav navbar-right"><li><a th:href="@{/login?logout}">Logout</a></li>
+</ul >
+
+</ul>
+</div>
+</div>
+
+</header>
+<section layout:fragment="content"></section>
+<footer><div >
+<small>@mon adresse</small>
+</div></footer>
+</body>
+</html>
